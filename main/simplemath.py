@@ -1,3 +1,7 @@
 
 def f_me(x):
-    return 0 # changeme
+    if(x == None): 
+        x = None
+    
+
+    return x # changeme
