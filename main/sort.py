@@ -1,3 +1,4 @@
 
 def sort(a):
-    return
+
+    return a
