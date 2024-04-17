@@ -11,4 +11,4 @@ def fib(n):
     for i in range(n): 
         print(a[i]) 
      
-    return a
+    return a[-1]
