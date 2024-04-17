@@ -1,3 +1,4 @@
+import pytest
 from main.fib import fib
 
 @pytest.mark.parametrize("x, expected", [
