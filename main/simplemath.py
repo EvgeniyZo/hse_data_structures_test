@@ -1,3 +1,7 @@
 
 def f_me(x):
-    return 0 # changeme
+    try:
+        if abs(x) != float('inf'):
+            return x * 25 + 10 # changeme
+    except:
+        return None
