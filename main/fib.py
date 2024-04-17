@@ -7,30 +7,25 @@
 
 # Получить число Фибоначчи по его номеру
 def fib(n: int):
-    if isinstance(n, str):
+    if not isinstance(n, int):
         return None
     if n is None:
         return None
-    if n == 0:
+    if n < 1:
         return None
-    if n < 0:
-        return None
+
     if n == 1:
         return 0
-    if n == 2 or n == 3:
-        return 1
-    if n == float("inf") or n == float("-inf"):
-        return None
 
-    n1 = 1
+    n1 = 0
     n2 = 1
 
-    res = 0
+    n3 = n2 + n1
 
-    for _ in range(3, n):
-        res = n2 + n1
+    for _ in range(1, n - 1):
+        n3 = n2 + n1
 
         n1 = n2
-        n2 = res
+        n2 = n3
 
-    return res
+    return n3
