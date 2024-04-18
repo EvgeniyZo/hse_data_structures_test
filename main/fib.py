@@ -8,7 +8,7 @@ def fib(n):
     for i in range(2, n): 
         a.append(a[i-1] + a[i-2]) 
       
-    for i in range(n): 
-        print(a[i]) 
+    # for i in range(n): 
+    #     print(a[i]) 
      
     return a[-1]
