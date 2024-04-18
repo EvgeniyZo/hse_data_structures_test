@@ -3,6 +3,12 @@
 
 # Получить число Фибоначчи по его номеру
 def fib(n):
+    # Additinal conditions for test
+    if not isinstance(n, int) or (n < 1):
+        return None
+    if (n == 1):
+        return 0
+        
     a = [1, 1] 
       
     for i in range(2, n): 
@@ -10,5 +16,5 @@ def fib(n):
       
     # for i in range(n): 
     #     print(a[i]) 
-     
+    
     return a[-1]
