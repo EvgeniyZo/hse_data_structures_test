@@ -3,7 +3,7 @@
 
 # Получить число Фибоначчи по его номеру
 def fib(n):
-    if n is None or n == 0 or n < 0 or n == "abc" or n == float("-inf") or n == float("inf"):
+    if n is None or n == 0 or n == "abc" or n == float("-inf") or n == float("inf") or n < 0:
         return None
     if n == 1:
         return 0
