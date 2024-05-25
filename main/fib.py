@@ -2,19 +2,17 @@
 
 # Получить число Фибоначчи по его номеру
 def fib(n):
-    return 0
-    # Additinal conditions for test
-    if not isinstance(n, int) or (n < 1):
+    # Проверка входных данных
+    if not isinstance(n, int) or n < 1:
         return None
-    if (n == 1):
+    if n == 1:
         return 0
+    if n == 2:
+        return 1
 
-    a = [0, 1] 
+    # Вычисление n-го числа Фибоначчи
+    a, b = 0, 1
+    for _ in range(2, n):
+        a, b = b, a + b
 
-    for i in range(2, n): 
-        a.append(a[i-1] + a[i-2]) 
-
-    # for i in range(n): 
-    #     print(a[i]) 
-
-    return a[-1]
+    return b
