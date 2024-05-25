@@ -1,21 +1,20 @@
-def fibonacci(n):
-  
+# Числа Фибоначчи — числовой ряд, при котором каждое последующее число равно сумме двух предыдущих
 
-  
-  if n < 2:
-    return n
+# Получить число Фибоначчи по его номеру
+def fib(n):
+    return 0
+    # Additinal conditions for test
+    if not isinstance(n, int) or (n < 1):
+        return None
+    if (n == 1):
+        return 0
 
-  a1 = 1
-  a2 = 1
+    a = [0, 1] 
 
-  for i in range(3, n + 1):
-    an = a1 + a2
-    a1 = a2
-    a2 = an
+    for i in range(2, n): 
+        a.append(a[i-1] + a[i-2]) 
 
-  return an
+    # for i in range(n): 
+    #     print(a[i]) 
 
-
-# Вычисление первых 10 чисел Фибоначчи
-for i in range(10):
-  print(fibonacci(i))
+    return a[-1]
