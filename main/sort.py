@@ -1,9 +1,10 @@
+def quicksort(arr):
+    if len(arr) < 2:
+        return arr
+    pivot = arr[0]
+    less = [i for i in arr[1:] if i < pivot]
+    greater = [i for i in arr[1:] if i > pivot]
 
 def sort(a):
     return
-    n = len(a)
-    for i in range(n):
-        for j in range(0, n-i-1):
-            if a[j] > a[j+1]:
-                a[j], a[j+1] = a[j+1], a[j]
-    return a
+    return quicksort(less) + [pivot] + quicksort(greater)
