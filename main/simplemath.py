@@ -8,4 +8,4 @@ def f_me(x):
     elif isinstance(x, str):
         return None
     elif isinstance(x, int) or isinstance(x, float):
-        return 5 ** 2 * x + 10
+        return 25 * x + 10
