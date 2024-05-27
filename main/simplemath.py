@@ -1,3 +1,11 @@
-
 def f_me(x):
-    return 0 # changeme
+    if x is None:
+        return None
+    elif x == float("inf"):
+        return None
+    elif x == float("-inf"):
+        return None
+    elif isinstance(x, str):
+        return None
+    elif isinstance(x, int) or isinstance(x, float):
+        return 5 ** 2 * x + 10
