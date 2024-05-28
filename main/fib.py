@@ -7,8 +7,8 @@ def fib(n):
          return 1
 
     fib1 = fib2 = 1
-        for _ in range(3, n):
-            fib1 , fib2 = fib2, fib1 + fib2
+    for _ in range(3, n):
+        fib1 , fib2 = fib2, fib1 + fib2
 
     return fib2
    
