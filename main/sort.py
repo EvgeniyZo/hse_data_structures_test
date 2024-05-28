@@ -1,5 +1,5 @@
 def sort(a):
-		for j in range(0, n-i-1):
-			if a[j] > a[j+1]:
-				a[j], a[j+1] = a[j+1], a[j]
+	for j in range(0, n-i-1):
+		if a[j] > a[j+1]:
+			a[j], a[j+1] = a[j+1], a[j]
 return a
