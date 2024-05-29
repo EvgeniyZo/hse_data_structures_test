@@ -2,5 +2,30 @@
 
 
 # Получить число Фибоначчи по его номеру
-def fib(n):
-    return 0
+# Числа Фибоначчи — числовой ряд, при котором каждое последующее число равно сумме двух предыдущих
+
+
+# Получить число Фибоначчи по его номеру
+def fib(n: int):
+    if not isinstance(n, int):
+        return None
+    if n is None:
+        return None
+    if n < 1:
+        return None
+
+    if n == 1:
+        return 0
+
+    n1 = 0
+    n2 = 1
+
+    n3 = n2 + n1
+
+    for _ in range(1, n - 1):
+        n3 = n2 + n1
+
+        n1 = n2
+        n2 = n3
+
+    return n3
